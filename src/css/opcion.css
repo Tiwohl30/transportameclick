@@ -1,9 +1,4 @@
-.body {
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
+
 
 
 
@@ -62,10 +57,6 @@
     transition: all 0.3s ease-out;
 }
 
-.menu-item button Link {
-    text-decoration: none;
-    color: black;
-}
 
 .container .info {
     margin: 50px auto;
@@ -91,41 +82,8 @@
     font-size: 20px;
 }
 
-.logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.logo img {
-    width: 50px;
-    height: 60px;
-}
 
 
-
-.copy {
-    padding: 10px 0px;
-    background-color: #fefefe;
-    text-align: left;
-}
-
-.copy p,
-.copy a {
-    margin: 0px;
-    padding: 0px;
-    color: rgb(241, 234, 234);
-}
-
-.copy a {
-    opacity: .5;
-    color: #f9f9f9;
-}
-
-.copy a:hover {
-    opacity: 1;
-    text-decoration: none;
-}
 
 @media screen and (max-width: 1080px) {
     .menu {
@@ -138,20 +96,3 @@
     }
 }
 
-button {
-    background-color: #5b0b53;
-    border: 10px #af4ca5;
-    border-radius: 20px;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    -webkit-transition-duration: 0.4s;
-    transition-duration: 0.4s;
-}
-.styl{
-    background-color: #5b0b53;
-}

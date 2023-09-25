@@ -2,13 +2,15 @@ import React from "react";
 import '../css/opcion.css'
 import Card from "../components/Tarjeta";
 import { Link } from "react-router-dom";
-
+import NavbarIndex from "../components/NavBar";
 
 export default function Grid(){
 
     return(
     <>
-   
+    <NavbarIndex />
+
+<br />
     <div className="container text-center">
 
         <div className="info">
@@ -23,11 +25,9 @@ export default function Grid(){
             <a><Card name="Usuarios" /> 
             </a>
             
-            <Card name="Viajes y entregas" />
-            <Card name="eats" />
-            <Card name="Establecimientos y restaurantes" />
-            <Card name="Empresas" />
-            <Card name="Transporta" />            
+            <Card name="Tarifas y costos" />
+            <Card name="Disponibilidad de taxis" />
+            <Card name="Problemas con pagos" />         
 
         </div>
     </div>
