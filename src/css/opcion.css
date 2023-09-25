@@ -102,14 +102,7 @@
     height: 60px;
 }
 
-.footer {
-    box-sizing: none;
-    width: 100%;
-    background-color: #060a0f;
-    padding: 30px 0px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
+
 
 .copy {
     padding: 10px 0px;
