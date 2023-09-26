@@ -13,19 +13,21 @@ return(<div>
     <BarraBusqueda />
 
     <div className="container">
-    <h2 className="mt-5">Todos los temas:</h2>
+    <h2 className="mt-5">Todos los temas:</h2> <br /><br />
 
     <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
+      ¿Cuánto cuesta un viaje desde [origen] a [destino]?</h4>
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      <div class="accordion-body">El costo del viaje dependerá de la distancia entre el origen y el destino, así como de las tarifas vigentes. Puedes verificar el precio estimado en la aplicación antes de confirmar la reserva.</div>
     </div>
   </div>
+
+  <br /><br />
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -36,6 +38,8 @@ return(<div>
       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
     </div>
   </div>
+
+  <br /><br />
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">

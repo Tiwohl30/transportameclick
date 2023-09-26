@@ -10,7 +10,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-
+import favicon from "../assets/favicon.png";
 import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -34,7 +34,7 @@ export default function NavbarIndex() {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <img
-              src={""}
+              src={favicon}
               style={{ width: 40, height: 40, borderRadius: 7 }}
             />
 
