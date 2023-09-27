@@ -30,7 +30,7 @@ export default function NavbarIndex() {
 
   return (
     <Paper elevation={3}>
-      <AppBar style={{ background: "#346BFF" }}>
+      <AppBar style={{ background: "#000000" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <img

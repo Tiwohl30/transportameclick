@@ -1,5 +1,5 @@
 import React from "react";
-import '../../src/css/bar.css'
+
 
 
 
@@ -9,14 +9,11 @@ function BarraBusqueda() {
 
   return (
 
-    <div className="d-flex justify-content-center h-100" id="bar">
-        <div className="search">
-            <input type="text" className="search-input" placeholder="search..." name="" />
-            <a href="#" className="search-icon">
-                <i className="fa fa-search"></i>
-            </a>
-        </div>
-    </div>
+    
+    <div className="input-group">
+    <input type="search" className="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+    <button type="button" className="btn btn-outline-primary">search</button>
+  </div>
     
   );
 }
