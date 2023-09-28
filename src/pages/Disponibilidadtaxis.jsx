@@ -1,8 +1,37 @@
-import React from "react";
+import React,{useState} from "react";
 import NavbarIndex from "../components/NavBar";
-import BarraBusqueda from "../components/BarraBusqueda";
+
 
 function Disponibilidad(){
+
+  const [searchText, setSearchText] = useState(""); // Estado para almacenar el texto de búsqueda
+
+  // Método para actualizar el texto de búsqueda
+  const handleSearch = () => {
+    // Obtenemos todos los elementos con la clase "accordion-body"
+    const accordionItems = document.querySelectorAll(".accordion-body");
+
+    // Iteramos sobre cada elemento y modificamos su contenido
+    accordionItems.forEach((item) => {
+      const originalText = item.getAttribute("data-original-text");
+      const text = originalText.toLowerCase();
+      const searchTerm = searchText.toLowerCase();
+
+      // Verificamos si el texto de búsqueda existe en el contenido del acordeón
+      if (text.includes(searchTerm)) {
+        // Reemplazamos el contenido con el texto resaltado
+        item.innerHTML = originalText.replace(
+          new RegExp(searchTerm, "gi"),
+          (match) => `<mark>${match}</mark>`
+        );
+      } else {
+        // Si no coincide, restauramos el contenido original
+        item.innerHTML = originalText;
+      }
+    });
+  };
+
+
 
 return(<div>
 
@@ -15,7 +44,26 @@ return(<div>
     <div className="container">
       <br />
 
-    <BarraBusqueda />
+      //Barra de busqueda
+    
+          
+          <div className="input-group">
+        <input
+          type="search"
+          className="form-control rounded"
+          placeholder="Search"
+          aria-label="Search"
+          aria-describedby="search-addon"
+          onChange={(e) => setSearchText(e.target.value)}
+        />
+        <button
+          type="button"
+          className="btn btn-outline-primary"
+          onClick={handleSearch}
+        >
+          Search
+        </button>
+      </div>
 
     <h2 className="mt-5">Todos los temas:</h2> <br /><br />
 
@@ -28,7 +76,9 @@ return(<div>
           </button>
         </h2>
         <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.</div>
+        <div class="accordion-body" data-original-text="El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.">
+  El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.
+</div>
         </div>
       </div>
 
@@ -97,4 +147,4 @@ va.
 
     </div>)}
 
-export default Disponibilidad;
+    export default Disponibilidad;
