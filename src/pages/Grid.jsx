@@ -2,7 +2,7 @@ import React from "react";
 import '../css/opcion.css'
 import Card from "../components/Tarjeta";
 import NavbarIndex from "../components/NavBar";
-import Footer from "../components/Footer";
+import { Link, Outlet } from "react-router-dom";
 
 export default function Grid(){
 
@@ -21,14 +21,12 @@ export default function Grid(){
         </div>
 
         <div className="menu">   
-               
-            <a><Card name="Usuarios" /> 
-            </a>
+              
             
-            <Card name="Tarifas y costos" />
-            <Card name="Disponibilidad de taxis" />
-            <Card name="Problemas con pagos" />         
-
+            <Card name="Tarifas y costos" to="/Tarifas"/>
+            <Card name="Disponibilidad de taxis" to="/Disponibilidad" />
+            <Card name="Problemas con pagos" to="/ProblemasPago" />         
+            
         </div>
     </div>
 
@@ -60,6 +58,8 @@ export default function Grid(){
       </div>
       
     </footer>
+
+    
   
 
     </>
