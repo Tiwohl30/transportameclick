@@ -46,8 +46,8 @@ return(<div>
 
       
     
-          
-          <div className="input-group">
+      {/* Barra de busqueda */}    
+      <div className="input-group">
         <input
           type="search"
           className="form-control rounded"
@@ -67,8 +67,13 @@ return(<div>
 
     <h2 className="mt-5">Todos los temas:</h2> <br /><br />
 
+
+    {/* Elemento acordeon */}
     <div className="accordion accordion-flush" id="accordionFlushExample">
       
+
+
+      {/* Item de acordeon */}
       <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
@@ -77,24 +82,25 @@ return(<div>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div className="accordion-body" data-original-text="El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.">
-  El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.
-</div>
+          El tiempo de espera puede variar según la demanda y la ubicación. La aplicación te proporcionará una estimación precisa al momento de la reserva.
+        </div>
         </div>
       </div>
 
   <br /><br />
 
 
-  <div className="accordion-item">
+    {/* Item de acordeon */}
+    <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
           ¿Puedo reservar un taxi con anticipación?</h4>
           </button>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body" data-original-text="Sí, puedes programar un viaje con anticipación en la aplicación para garantizar la disponibilidad.">
-        Sí, puedes programar un viaje con anticipación en la aplicación para garantizar la disponibilidad.
-</div>
+          <div className="accordion-body" data-original-text="Sí, puedes programar un viaje con anticipación en la aplicación para garantizar la disponibilidad.">
+          Sí, puedes programar un viaje con anticipación en la aplicación para garantizar la disponibilidad.
+          </div>
         </div>
       </div>
 
@@ -105,16 +111,18 @@ return(<div>
 
   <br /><br />
 
-  <div className="accordion-item">
+
+      {/* Item acordeon */}
+      <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
           ¿Hay taxis disponibles las 24 horas?</h4>
           </button>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body" data-original-text="Sí, nuestro servicio de taxis está disponible las 24 horas del día, los 7 días de la semana.">
-        Sí, nuestro servicio de taxis está disponible las 24 horas del día, los 7 días de la semana.
-</div>
+          <div className="accordion-body" data-original-text="Sí, nuestro servicio de taxis está disponible las 24 horas del día, los 7 días de la semana.">
+          Sí, nuestro servicio de taxis está disponible las 24 horas del día, los 7 días de la semana.
+          </div>
         </div>
       </div>
 
@@ -128,6 +136,8 @@ return(<div>
     </div>
     
 
+
+    {/* Footer */}
     <footer className="text-center text-white" 
     style={{"backgroundColor": "#000000", 
       "marginTop": "8rem",

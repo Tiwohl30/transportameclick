@@ -36,18 +36,21 @@ function Pago(){
 return(<div>
 
 
+    {/* barra de navegacion */}
     <NavbarIndex />
+
     <br /><br /><br /><br />
     <h1 style={{"marginLeft": "60px",}}> Problemas con el pago </h1>
     
 
+
+    
     <div className="container">
       <br />
-
       
-    
-          
-          <div className="input-group">
+
+      {/* Barra de busqueda */}
+      <div className="input-group">
         <input
           type="search"
           className="form-control rounded"
@@ -67,34 +70,40 @@ return(<div>
 
     <h2 className="mt-5">Todos los temas:</h2> <br /><br />
 
+
+
+    {/* Elemento acordeon*/}
     <div className="accordion accordion-flush" id="accordionFlushExample">
       
+
+      {/* item de acordeon */}
       <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
           Mi tarjeta de crédito fue rechazada, ¿qué debo hacer?</h4>
           </button>
         </h2>
-        <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
         <div className="accordion-body" data-original-text="Te recomiendo verificar que la información de la tarjeta esté ingresada correctamente. Si el problema persiste, ponte en contacto con tu proveedor de tarjeta o intenta con otro método de pago.">
         Te recomiendo verificar que la información de la tarjeta esté ingresada correctamente. Si el problema persiste, ponte en contacto con tu proveedor de tarjeta o intenta con otro método de pago.
-</div>
         </div>
       </div>
+      </div>
 
-  <br /><br />
+       <br /><br />
 
 
-  <div className="accordion-item">
+      {/* item de acordeon */}
+      <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
           ¿Qué métodos de pago se aceptan?</h4>
           </button>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body" data-original-text="Aceptamos pagos con tarjeta de crédito y débito, así como pagos en efectivo en algunos casos.">
+          <div className="accordion-body" data-original-text="Aceptamos pagos con tarjeta de crédito y débito, así como pagos en efectivo en algunos casos.">
         Aceptamos pagos con tarjeta de crédito y débito, así como pagos en efectivo en algunos casos.
-</div>
+          </div>
         </div>
       </div>
 
@@ -105,29 +114,32 @@ return(<div>
 
   <br /><br />
 
-  <div className="accordion-item">
+      {/* Item de acorden */}
+      <div className="accordion-item">
         <h2 className="accordion-header" id="flush-headingOne">
           <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><h4>
           ¿Puedo pagar en efectivo?</h4>
           </button>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div className="accordion-body" data-original-text="Sí, en algunos casos puedes pagar en efectivo. Esto estará disponible como opción de pago en la aplicación.">
+          <div className="accordion-body" data-original-text="Sí, en algunos casos puedes pagar en efectivo. Esto estará disponible como opción de pago en la aplicación.">
         Sí, en algunos casos puedes pagar en efectivo. Esto estará disponible como opción de pago en la aplicación.
-</div>
+          </div>
         </div>
       </div>
 
 
 
 
-</div>
+      </div>
         
 
     
     </div>
     
 
+
+    {/* Footer */}
     <footer className="text-center text-white" 
     style={{"backgroundColor": "#000000", 
       "marginTop": "8rem",

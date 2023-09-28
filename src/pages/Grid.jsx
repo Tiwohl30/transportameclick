@@ -7,10 +7,14 @@ import { Link, Outlet } from "react-router-dom";
 export default function Grid(){
 
     return(
-    <>
+    <div style={{"backgroundColor": "#ffd102"}}>
+
+    {/* Barra de navegacion  */}
     <NavbarIndex />
 
-<br /><br />
+    <br /><br />
+
+    {/* Contenedor */}
     <div className="container text-center">
 
         <div className="info">
@@ -20,9 +24,12 @@ export default function Grid(){
                 </span>
         </div>
 
+
+        {/* menu de tarjetas*/}
+
         <div className="menu">   
               
-            
+            {/* Tarjetas */}
             <Card name="Tarifas y costos" to="/Tarifas"/>
             <Card name="Disponibilidad de taxis" to="/Disponibilidad" />
             <Card name="Problemas con pagos" to="/ProblemasPago" />         
@@ -31,6 +38,8 @@ export default function Grid(){
     </div>
 
     
+
+
  
     <footer className="text-center text-white" 
     style={{"backgroundColor": "#000000", 
@@ -54,7 +63,7 @@ export default function Grid(){
       
       <div className="text-center p-3" style={{"backgroundColor": "rgba(0, 0, 0, 0.2)",}}>
         © 2020 Copyright:
-        <a className="text-white">MDBootstrap.com</a>
+        <a className="text-white">transportameclick.com</a>
       </div>
       
     </footer>
@@ -62,7 +71,7 @@ export default function Grid(){
     
   
 
-    </>
+    </div>
   )
 }
 
